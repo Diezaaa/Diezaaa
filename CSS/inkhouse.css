@@ -224,12 +224,17 @@ a{
         color: var(--yellow)
     }
     #img_prj_container{
-        width: 35vw;
+        display: flex;
+        justify-content: right;
         margin-right: 39px;
+    }
+    #img_prj_container img{
+        width: 100%;
     }
     #content
     {
         align-items: center;
+        justify-content: center;
         grid-area: center_of_the_page;
         display: flex;
         width: 80.905vw;
