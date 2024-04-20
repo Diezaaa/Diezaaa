@@ -1,0 +1,322 @@
+#outer_box {
+    grid-template-rows: auto 1fr 1fr  auto;
+}
+
+:root {
+    --white: #FFFFFF;
+    --yellow: #EFF1C5;
+}
+
+body {
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Orbitron", sans-serif;
+}
+
+#outer_box {
+    display: grid;
+    grid-template-areas:
+            "left_top right_top"
+            "center_of_the_page center_of_the_page"
+            "nav nav"
+            "left_bottom right_bottom";
+    background-color: #1c1c2c;
+    opacity: 1;
+    background-image: linear-gradient(rgba(36, 40, 48, 0.5) 1px, transparent 1px), linear-gradient(to right, rgba(36, 40, 48, 0.5) 1px, #1c1c2c 1px);
+    background-size: 15px 15px;
+    border-radius: 50px;
+    overflow: auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white)
+}
+
+#top_right{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    grid-area: right_top;
+}
+
+#top_left{
+    display: flex;
+    grid-area: left_top;
+    flex-direction: column;
+    text-align: left;
+}
+
+#center_container {
+    grid-area: center_of_the_page;
+}
+
+#left_bottom {
+    grid-area: left_bottom;
+}
+
+#right_bottom {
+    grid-area: right_bottom;
+}
+
+.white {
+    color: var(--white);
+    font-weight: bold;
+}
+
+#greeting, #my_name {
+    color: var(--white);
+    font-family: "Orbitron", sans-serif;
+}
+
+#top_left, #top_right {
+    color: var(--yellow);
+    font-family: "Orbitron", sans-serif;
+    flex-wrap: nowrap;
+}
+
+#bottom_left, #bottom_right {
+    color: var(--yellow);
+    flex-wrap: nowrap;
+    font-family: "Orbitron", sans-serif;
+}
+
+#bottom_right {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right;
+}
+
+#bottom_left{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+}
+
+@media only screen and (min-width: 895px) {
+    #outer_box{
+        width: calc(100vw - 60px);
+        height: calc(100vh - 60px);
+        grid-template-rows: auto 1fr auto auto;
+        background-image: linear-gradient(rgba(36, 40, 48, 0.35) 1px, transparent 1px), linear-gradient(to right, rgba(36, 40, 48, 0.35) 1px, #1c1c2c 1px);
+        background-size: 8px 8px;
+
+    }
+    #top_left, #top_right {
+        font-size: 14px;
+    }
+    #btn_container{
+        display: none;
+    }
+    #mobile_nav{
+        display: none;
+    }
+    #nav_section{
+        grid-area: nav;
+    }
+    #top_right{
+        margin-top: 35px;
+        margin-right: 32px;
+    }
+    #top_left{
+        margin-top: 35px;
+        margin-left: 19px;
+    }
+    #bottom_left, #bottom_right, #top_left, #top_right{
+        font-size: 14px;
+    }
+    #bottom_right{
+        margin-bottom: 25px;
+        margin-right: 32px;
+    }
+    #bottom_left{
+        margin-bottom: 23px;
+        margin-left: 19px;
+    }
+    #pc_nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        color: white;
+    }
+    #pc_nav{
+        background-color: rgba(61, 61, 61,0.5);
+        height: 60px;
+        border-radius: 10000px;
+        width: 38.912vw;
+        backdrop-filter: blur(4px);
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Orbitron", sans-serif;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: calc(100vh - 70px);
+    }
+
+    #pc_nav_blur{
+
+    }
+    #nav_section{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    #nav_marker{
+        color: var(--yellow)
+    }
+
+    #greeting{
+        font-size: 48px;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    #my_name{
+        font-size: 64px;
+        font-weight: bold;
+        text-align: right;
+        margin-bottom: 42px;
+    }
+    #profession{
+        font-size: 24px;
+        color: #EFF1C5;
+        font-family: "Titillium Web", sans-serif;
+        text-align: left;
+    }
+    #center_container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #circ{
+        filter: blur(190px);
+        position: absolute;
+        width: 270px;
+        background-color: #EFF1C5;
+        height: 270px;
+        border-radius: 50%;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 894px) {
+    #outer_box{
+        width: calc(100vw - 20px);
+        height: calc(100vh - 20px);
+    }
+    #pc_nav, #nav_section{
+        display: none;
+    }
+    #btn_container {
+        grid-area: nav;
+        display: flex;
+        align-items: flex-end;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #mobile_nav {
+        grid-area: mb_nav;
+        display: none;
+    }
+
+    #mobile_nav ul {
+        overflow: auto;
+        margin-top: 50px;
+    }
+
+    #mobile_nav li {
+        margin: 3.594vh;
+        text-align: center;
+    }
+
+    #menu_btn {
+        width: 60px;
+    }
+
+
+    #center_container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+
+    #left_bottom {
+        grid-area: left_bottom;
+    }
+
+    #right_bottom {
+        grid-area: right_bottom;
+    }
+
+
+    #top_left, #top_right {
+        color: var(--yellow);
+        font-size: 12px;
+        width: 41.86vw;
+    }
+
+    #bottom_left {
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+    #bottom_right {
+        margin-bottom: 12px;
+        margin-right: 12px;
+    }
+
+    #bottom_right p{
+        width: auto;
+    }
+    #top_left {
+        margin-top: 21px;
+        margin-left: 12px;
+    }
+
+    #top_right {
+        margin-top: 21px;
+        margin-right: 12px;
+    }
+
+    #bottom_left, #bottom_right {
+        font-size: 12px;
+    }
+    #greeting, #my_name {
+        color: var(--white);
+        font-family: "Orbitron", sans-serif;
+    }
+
+    #greeting {
+        font-size: 32px;
+    }
+
+    #my_name {
+
+        font-size: 44px;
+        font-weight: bold;
+    }
+
+    #profession {
+        color: #EFF1C5;
+        font-family: "Titillium Web", sans-serif;
+        font-size: 15px;
+    }
+
+    #center_container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
