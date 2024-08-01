@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <!--Basic-->
     <title>Daniel Gertsykov | Home</title>
@@ -43,12 +43,12 @@
     <!-- Left top corner -->
 
     <div id="top_left">
-        <p>longitude <span class="white">~ 28.6542</span></p><br>
-        <p>latitude <span class="white">~ 77.2373</span></p>
+        <p>longitude <span class="white" id="longitude">???</span></p><br>
+        <p>latitude <span class="white" id="latitude">???</span></p>
     </div>
     <div id="top_right">
-        <p><span class="white">Chrome v119.0.0.0</span> ~ Browser</p><br>
-        <p><span class="white">Window 10</span> ~ OS</p>
+        <p><span class="white" id="browser"></span> ~ Browser</p><br>
+        <p><span class="white" id="os">Window 10</span> ~ OS</p>
     </div>
 
     <!-- Center of the page -->
@@ -95,16 +95,16 @@
 
     <!-- Left bottom corner -->
     <div id="bottom_left">
-        <p>Local Time <span class="white">~ 16:05</span></p><br>
-        <p>Time Spend <span class="white">~00:<span
-                id="timer_minutes">05</span></span></p>
+        <p>Local Time <span class="white"  id="clock"></span></p><br>
+        <p>Time Spend <span class="white" id="timeSpent">00:00</span></p>
     </div>
     <!-- Right bottom corner -->
     <div id="bottom_right">
-        <p><span class="white">122.161.53.938</span> ~ IP</p><br>
-        <p><span class="white">Delhi, India</span> ~ Location</p>
+        <p><span class="white" id="ip">???</span> ~ IP</p><br>
+        <p><span class="white" id="location">???</span> ~ Location</p>
     </div>
 </div>
-<script src="/js/menu.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/userInfo.js"></script>
 </body>
 </html>
