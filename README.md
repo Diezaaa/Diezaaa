@@ -1,7 +1,7 @@
 ## Hi there 👋
 My name is Daniel, and I'm trying to create enjoyable mobile Android experiences.
 ## Skills
-Android development, Kotlin (including flows and coroutines), Jetpack Compose, Jetpack, Hilt, Jetpack DataStore, Navigation 3, Room, Firebase (Firebsae Storage, Firebase Authentication, Firbase Firestore), Retrofit, Paging 3, CameraX and Coil
+Android development, Kotlin (including flows and coroutines), Jetpack Compose, Jetpack, Hilt, Jetpack DataStore, Navigation 3, Room, Firebase (Firebsae Storage, Firebase Authentication, Firbase Firestore, Firebase Local Emulator Suite), Retrofit, Paging 3, CameraX and Coil
 ## Projects
 ### Done Mate
 Done Mate is my flagship project: an offline-first Android task-management app. Users can create tasks that include images, due dates, reminders, and images. The user can take a photo for a task on a custom-built camera screen that includes a preview and camera control settings. Additionally, users can track their progress. The app includes an inspiration screen, which shows an endless scrollable feed (list) of motivational quotes to empower the user to test his limits. The app enables users to create an account by using e-mail or linking their Google account. The user can choose between a light or dark theme in the app's settings.
