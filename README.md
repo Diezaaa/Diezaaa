@@ -1,7 +1,8 @@
 ## Hi there 👋
-My name is Daniel, and I'm developing modern and scalable mobile experiences using the best practices, like layered architecture, and the latest tools, like Jetpack Compose.
+
+My name is Daniel, and I'm developing modern and scalable Andorid mobile apps using the best practices, like layered architecture, and the latest tools, like Jetpack Compose.
 ## Skills
-Android development, Kotlin (including flows and coroutines), Jetpack Compose, Jetpack, Hilt, Jetpack DataStore, Navigation 3, Room, Firebase (Firebsae Storage, Firebase Authentication, Firbase Firestore, Firebase Local Emulator Suite), Retrofit, Paging 3, CameraX and Coil
+Android development, Kotlin (including flows and coroutines), Jetpack Compose, Jetpack, Hilt, Jetpack DataStore, Navigation 3, Room, Firebase (Firebase Storage, Firebase Authentication, Firebase Firestore, Firebase Local Emulator Suite), Retrofit, Paging 3, CameraX, and Coil
 ## Projects
 ### Done Mate
 I built Done Mate, an offline-first Android task-management app using Kotlin and Jetpack Compose.
@@ -12,8 +13,10 @@ I built Done Mate, an offline-first Android task-management app using Kotlin and
 - Created a custom camera screen with a preview and camera controls, using CameraX to access camera capabilities and Firebase Storage to store task photos remotely.
 - Added light and dark themes.
 
-For a complete overview and code of the project, [click here to visit the project's page (project's repository)](https://github.com/Diezaaa/done-mate).
+For a complete overview and code of the project, [click here to visit the project's page (the project's repository)](https://github.com/Diezaaa/done-mate).
 ### Tian
-tian is my first relatively big project. It's a web app that helps beginners learn Python through short lessons, quizzes, and coding exercises. It includes account system, lessons system, account management, achievements, and administrator tools for managing lessons and users.
+tian is my first relatively big project. It's a web app that helps beginners learn Python through short lessons, quizzes, and coding exercises. It includes an account system, a lessons system, account management, achievements, and administrator tools for managing lessons and users.
 
-For a complete overview and code of the project, [click here to visit the project's page (project's repository)](https://github.com/Diezaaa/tian).
+For a complete overview and code of the project, [click here to visit the project's page (the project's repository)](https://github.com/Diezaaa/tian).
+
+
