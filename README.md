@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-My name is Daniel, and I'm developing modern and scalable Andorid mobile apps using the best practices, like layered architecture, and the latest tools, like Jetpack Compose.
+My name is Daniel, and I'm developing modern and scalable Android mobile apps using the best practices, like layered architecture, and the latest tools, like Jetpack Compose.
 ## Skills
 Android development, Kotlin (including flows and coroutines), Jetpack Compose, Jetpack, Hilt, Jetpack DataStore, Navigation 3, Room, Firebase (Firebase Storage, Firebase Authentication, Firebase Firestore, Firebase Local Emulator Suite), Retrofit, Paging 3, CameraX, and Coil
 ## Projects
